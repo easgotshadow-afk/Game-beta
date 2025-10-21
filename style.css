@@ -1,0 +1,57 @@
+/* เต็มหน้าจอ, ไม่มีสีอื่น */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff; /* หน้าโล่งขาว */
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #fff); /* ท้องฟ้าไล่สีฟ้า-ขาว */
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #70c5ce, #fff); /* ท้องฟ้า */
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+}
+/* ============================= */
+/* Body เต็มหน้าจอ, ไม่มี scroll */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* ซ่อน scrollbars */
+  background: linear-gradient(to bottom, #70c5ce, #fff); /* ท้องฟ้าไล่สีฟ้า-ขาว */
+}
+
+/* ============================= */
+/* Canvas เต็มหน้าจอ */
+canvas {
+  display: block;
+  width: 100vw;  /* เต็มความกว้าง viewport */
+  height: 100vh; /* เต็มความสูง viewport */
+  border: 1px solid #000;
+}
