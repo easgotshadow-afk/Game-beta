@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- แบบฟอร์มใส่ชื่อ -->
+  <div id="playerForm" style="position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h2>🎮 Enter Your Name</h2>
+    <input id="playerName" type="text" placeholder="Your name..." style="padding: 10px; font-size: 18px;">
+    <br><br>
+    <button id="startGameBtn" style="padding: 10px 20px; font-size: 18px;">Start Game</button>
+  </div>
+
+  <!-- สถิติ -->
+  <div id="stats" style="position: absolute; top: 20px; right: 20px; font-size: 18px; color: white; text-align: right;"></div>
+<div id="shop" style="position:absolute; top:80px; left:20px; background:rgba(0,0,0,0.5); padding:10px; color:white; display:none;">
+  <h3>🛒 Shop</h3>
+  <div id="shopItems"></div>
+  <button onclick="closeShop()">Close Shop</button>
+</div>
+<button id="openShopBtn" style="position:absolute; top: 100pxpx; left:20px; padding:10px;">Open Shop</button>
+
+  <!-- ตัวเกม -->
+  <canvas id="gameCanvas"></canvas>
+<button id="resetBtn" style="
+  position:absolute; 
+  bottom:20px; 
+  left:20px;
+  font-size:16px; 
+  padding:8px 12px;
+  background-color:red; 
+  color:white;
+  border:none; 
+  border-radius:5px; 
+  cursor:pointer;
+">
+รีเซ็ตสถิติ
+</button>
+
+
+  <!-- ปุ่มเล่นใหม่ -->
+  <button id="restartBtn" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #28a745;
+    color: white;
+    display: none;
+    cursor: pointer;
+  ">
+    เล่นอีกครั้ง
+  </button>
+
+  <!-- ✅ โหลดสคริปต์ไว้ท้ายสุด (ดีที่สุด) -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
